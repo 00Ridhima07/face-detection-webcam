@@ -19,7 +19,7 @@ while True:
     #First 2 numbers are coordinates of top left corner and second 2 are bottom right corner
     face_coordinates = trained_face_data.detectMultiScale(grayscaled_vid)
 
-    #Draw rectangles around the faces, (0,255,0) is BGR colour, 2 is thickness of rectangle
+    #Draw rectangles around the faces, (0,255,0) is RGB colour, 2 is thickness of rectangle
     for(x,y,w,h) in face_coordinates:
         cv2.rectangle(frame,(x,y),(x+w,y+h),(0,255,0),2)
 
